@@ -66,7 +66,7 @@ def display_results():
     median_beds = sales["BedsTotal"].median()
 
     # Linear regression (polynomial of degree 1 for a straight line)
-    #m variables are reference to slopes 
+    # m variables are reference to slopes 
     m1 = np.polyfit(sales["SqFtTotal"], sales["ClosePrice"], 1)[0]
     m2 = np.polyfit(sales["BathsFull"], sales["ClosePrice"], 1)[0]
     m3 = np.polyfit(sales["GarageCapacity"], sales["ClosePrice"], 1)[0]
